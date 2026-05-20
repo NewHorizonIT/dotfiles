@@ -10,7 +10,7 @@ vim.keymap.set("n", "x", '"_x', opts)
 
 -- slipt windown
 vim.keymap.set("n", "<leader>v", "<C-w>v", opts)
-vim.keymap.set("n", "<leader>h", "<C-w>s", opts)
+vim.keymap.set("n", "<leader>sh", "<C-w>s", opts)
 vim.keymap.set("n", "<leader>se", "<C-w>=", opts)
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts)
 
