@@ -27,10 +27,10 @@ vim.keymap.set("n", "gh", ":wincmd h<CR>", opts)
 vim.keymap.set("n", "gl", ":wincmd l<CR>", opts)
 
 -- Tabs
-vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts)   -- open new tab
 vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)     --  go to next tab
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)     --  go to previous tab
 
 -- Move text up and down
 vim.keymap.set({ "v", "i", "n" }, "<A-j>", ":m .+1<CR>==", opts)
@@ -68,3 +68,4 @@ vim.keymap.set("v", "<C-c>", "y", { desc = "Copy selection" })
 
 -- Paste (Ctrl+V) trong Normal/Visual mode
 vim.keymap.set({ "n", "v" }, "<C-v>", "p", { desc = "Paste" })
+vim.keymap.set({ "t" }, "<ESC>", [[<C-\><C-n>]], { desc = "Exit terminal" })
